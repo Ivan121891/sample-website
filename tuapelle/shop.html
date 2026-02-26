@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop — Tua Pelle Sacramento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .shop-header {
+            padding: 12rem 0 6rem;
+            background-color: var(--secondary-color);
+            text-align: center;
+        }
+
+        .shop-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: none;
+            border: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--text-light);
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        .shop-grid {
+            padding: 4rem 0 8rem;
+        }
+
+        .product-price {
+            font-family: var(--font-heading);
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">TUA PELLE</a>
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </div>
+                <div class="nav-item">
+                    <a href="index.html#treatments" class="nav-link">Treatments</a>
+                    <div class="dropdown-menu">
+                        <a href="facial-treatment.html" class="dropdown-link">Facial Rituals</a>
+                        <a href="body-treatment.html" class="dropdown-link">Body Rituals</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn">Cart (0)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-header">
+            <div class="container">
+                <h1 class="section-title">Apothecary Collection</h1>
+                <p class="section-desc">Purity and potency in every drop.</p>
+            </div>
+        </section>
+
+        <!-- Shop Grid -->
+        <section class="shop-grid">
+            <div class="container">
+                <div class="shop-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Face Care</button>
+                    <button class="filter-btn">Body Care</button>
+                    <button class="filter-btn">Serums & Oils</button>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Original Products -->
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" id="prod-hydra"></div>
+                        <h3 class="product-name">Hydra Cream</h3>
+                        <span class="product-price">$65.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" id="prod-cleanser"></div>
+                        <h3 class="product-name">Gentle Cleanser</h3>
+                        <span class="product-price">$42.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" id="prod-night"></div>
+                        <h3 class="product-name">Night Cream</h3>
+                        <span class="product-price">$88.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" id="prod-day"></div>
+                        <h3 class="product-name">Day Cream SPF 30</h3>
+                        <span class="product-price">$55.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+
+                    <!-- New Products (Reusing images since quota failed) -->
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" style="background-image: url('images/product5.png')"></div>
+                        <h3 class="product-name">Antioxidant Serum</h3>
+                        <span class="product-price">$95.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" style="background-image: url('images/product3.png')"></div>
+                        <h3 class="product-name">Botanical Body Oil</h3>
+                        <span class="product-price">$72.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" style="background-image: url('images/product1.png')"></div>
+                        <h3 class="product-name">Rosewater Mist</h3>
+                        <span class="product-price">$38.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                        <div class="product-image" style="background-image: url('images/product2.png')"></div>
+                        <h3 class="product-name">Purifying Clay Mask</h3>
+                        <span class="product-price">$54.00</span>
+                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Newsletter -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">TUA PELLE</h2>
+                    <p class="footer-tagline">Certified Organic &bull; 100% Vegan</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Join our radiance circle</h3>
+                    <p class="newsletter-desc">Sign up for exclusive offers, skincare tips, and new product launches.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Shop</h4>
+                        <a href="shop.html">Best Sellers</a>
+                        <a href="shop.html">Face Care</a>
+                        <a href="shop.html">Body Care</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>About</h4>
+                        <a href="about.html">Our Story</a>
+                        <a href="about.html">Ingredients</a>
+                        <a href="about.html">Sustainability</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Support</h4>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">FAQ</a>
+                        <a href="contact.html">Returns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tua Pelle Sacramento. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

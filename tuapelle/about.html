@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Tua Pelle Sacramento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 12rem 0 6rem;
+            background-color: var(--bg-color);
+            text-align: center;
+        }
+
+        .about-content {
+            padding: 4rem 0 8rem;
+            background-color: #fff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media(min-width: 992px) {
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .about-image {
+            width: 100%;
+            height: 600px;
+            background-image: url('../images/about.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">TUA PELLE</a>
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </div>
+                <div class="nav-item">
+                    <a href="index.html#treatments" class="nav-link">Treatments</a>
+                    <div class="dropdown-menu">
+                        <a href="facial-treatment.html" class="dropdown-link">Facial Rituals</a>
+                        <a href="body-treatment.html" class="dropdown-link">Body Rituals</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn">Cart (0)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="section-title">Our Story</h1>
+                <p class="section-desc">The journey back to pure, vibrant skin.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container about-grid">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <h2>Philosophy of Purity</h2>
+                    <p>At Tua Pelle Sacramento, we believe that nature holds the ultimate blueprint for optimal skin
+                        health. Our journey began with a simple question: why should effective skincare require
+                        compromising on ingredients?</p>
+                    <p>We spent years collaborating with botanical experts, holistic estheticians, and passionate
+                        formulators to craft a line that honors the skin's natural intelligence. Every jar and bottle we
+                        produce is a testament to the synergistic power of earth-derived elements.</p>
+                    <p>By blending ancestral herbal wisdom with modern extraction techniques, we deliver formulas that
+                        awaken your inner glow without disrupting your delicate skin barrier. Welcome to a higher
+                        standard of beauty.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section Shared -->
+        <section class="values" style="padding-top: 6rem;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Rooted in nature.</h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h4 class="value-title">Wild Botanicals</h4>
+                        <p class="value-desc">Harvested at their peak for maximum efficacy.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Precious Oils</h4>
+                        <p class="value-desc">Cold-pressed to retain essential nutrients.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Earth-Conscious</h4>
+                        <p class="value-desc">Sustainable packaging and practices.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Responsibly Sourced</h4>
+                        <p class="value-desc">Ethical partnerships with global artisans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Newsletter -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">TUA PELLE</h2>
+                    <p class="footer-tagline">Certified Organic &bull; 100% Vegan</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Join our radiance circle</h3>
+                    <p class="newsletter-desc">Sign up for exclusive offers, skincare tips, and new product launches.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Shop</h4>
+                        <a href="index.html#shop">Best Sellers</a>
+                        <a href="index.html#shop">Face Care</a>
+                        <a href="index.html#shop">Body Care</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>About</h4>
+                        <a href="about.html">Our Story</a>
+                        <a href="about.html">Ingredients</a>
+                        <a href="about.html">Sustainability</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Support</h4>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">FAQ</a>
+                        <a href="contact.html">Returns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tua Pelle Sacramento. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

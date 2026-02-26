@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Tua Pelle Sacramento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 12rem 0 6rem;
+            background-color: var(--bg-color);
+            text-align: center;
+        }
+
+        .contact-content {
+            padding: 4rem 0 8rem;
+            background-color: #fff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        @media(min-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .contact-form-container {
+            background-color: var(--secondary-color);
+            padding: 4rem;
+            border-radius: var(--border-radius);
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            background-image: url('../images/product2.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid rgba(44, 62, 46, 0.2);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background: #fff;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(44, 62, 46, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">TUA PELLE</a>
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </div>
+                <div class="nav-item">
+                    <a href="index.html#treatments" class="nav-link">Treatments</a>
+                    <div class="dropdown-menu">
+                        <a href="facial-treatment.html" class="dropdown-link">Facial Rituals</a>
+                        <a href="body-treatment.html" class="dropdown-link">Body Rituals</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn">Cart (0)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="section-title">Get in touch</h1>
+                <p class="section-desc">We're here to assist you on your skincare journey.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container contact-grid">
+                <div class="contact-form-container">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="Your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-input" placeholder="How can we help?" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Our Studio</h3>
+                        <p>123 Botanical Avenue, Suite 4</p>
+                        <p>Sacramento, CA 95814</p>
+                        <p>hello@tuapellesacramento.com</p>
+                    </div>
+                </div>
+                <div class="contact-image"></div>
+            </div>
+        </section>
+
+        <!-- Footer / Newsletter -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">TUA PELLE</h2>
+                    <p class="footer-tagline">Certified Organic &bull; 100% Vegan</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Join our radiance circle</h3>
+                    <p class="newsletter-desc">Sign up for exclusive offers, skincare tips, and new product launches.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Shop</h4>
+                        <a href="index.html#shop">Best Sellers</a>
+                        <a href="index.html#shop">Face Care</a>
+                        <a href="index.html#shop">Body Care</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>About</h4>
+                        <a href="about.html">Our Story</a>
+                        <a href="about.html">Ingredients</a>
+                        <a href="about.html">Sustainability</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Support</h4>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">FAQ</a>
+                        <a href="contact.html">Returns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tua Pelle Sacramento. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
