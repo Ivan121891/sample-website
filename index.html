@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tua Pelle Sacramento — Natural Skincare</title>
+    <meta name="description"
+        content="Discover pure, results-driven skincare rooted in nature. Tua Pelle Sacramento offers organic, botanical blends for a vibrant, radiant complexion.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">TUA PELLE</a>
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </div>
+                <div class="nav-item">
+                    <a href="index.html#treatments" class="nav-link">Treatments</a>
+                    <div class="dropdown-menu">
+                        <a href="facial-treatment.html" class="dropdown-link">Facial Rituals</a>
+                        <a href="body-treatment.html" class="dropdown-link">Body Rituals</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn">Cart (0)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <!-- Background image will go in CSS -->
+            <div class="hero-content">
+                <h1 class="hero-title">Awaken your<br>inner glow.</h1>
+                <p class="hero-subtitle">Harness the power of botanicals with our expertly developed formulations. Pure,
+                    results-driven skincare for a vibrant, radiant complexion.</p>
+                <div class="hero-cta">
+                    <a href="#shop" class="btn btn-primary">Shop Now</a>
+                    <a href="about.html" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Products Section -->
+        <section class="products" id="shop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nature meets science</h2>
+                    <p class="section-desc">Botanically Crafted Formulas</p>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image" id="prod-hydra"></div>
+                        <h3 class="product-name">Hydra Cream</h3>
+                        <p class="product-price"
+                            style="margin-bottom: 0.5rem; color: var(--text-light); font-family: var(--font-heading);">
+                            $65.00</p>
+                        <button class="product-link add-to-cart-btn"
+                            style="background:none; border:none; cursor:pointer;" data-id="prod_hydra"
+                            data-name="Hydra Cream" data-price="65.00" data-image="images/product1.png">Add to
+                            Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image" id="prod-cleanser"></div>
+                        <h3 class="product-name">Gentle Cleanser</h3>
+                        <p class="product-price"
+                            style="margin-bottom: 0.5rem; color: var(--text-light); font-family: var(--font-heading);">
+                            $42.00</p>
+                        <button class="product-link add-to-cart-btn"
+                            style="background:none; border:none; cursor:pointer;" data-id="prod_cleanser"
+                            data-name="Gentle Cleanser" data-price="42.00" data-image="images/product2.png">Add to
+                            Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image" id="prod-night"></div>
+                        <h3 class="product-name">Night Cream</h3>
+                        <p class="product-price"
+                            style="margin-bottom: 0.5rem; color: var(--text-light); font-family: var(--font-heading);">
+                            $88.00</p>
+                        <button class="product-link add-to-cart-btn"
+                            style="background:none; border:none; cursor:pointer;" data-id="prod_night"
+                            data-name="Night Cream" data-price="88.00" data-image="images/product3.png">Add to
+                            Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image" id="prod-day"></div>
+                        <h3 class="product-name">Day Cream SPF 30</h3>
+                        <p class="product-price"
+                            style="margin-bottom: 0.5rem; color: var(--text-light); font-family: var(--font-heading);">
+                            $55.00</p>
+                        <button class="product-link add-to-cart-btn"
+                            style="background:none; border:none; cursor:pointer;" data-id="prod_day"
+                            data-name="Day Cream SPF 30" data-price="55.00" data-image="images/product4.png">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="treatments" id="treatments">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Treatment Spotlight</h2>
+                    <p class="section-desc">Elevate your skincare ritual</p>
+                </div>
+                <div class="treatment-grid">
+                    <div class="treatment-card">
+                        <div class="treatment-image" id="treat-facial"></div>
+                        <div class="treatment-info">
+                            <h3 class="treatment-name">Restorative Facial</h3>
+                            <p class="treatment-desc">A deep-cleansing, botanical-rich treatment designed to purify,
+                                hydrate, and rebalance your complexion using our signature organic blends.</p>
+                            <a href="contact.html" class="btn btn-secondary treatment-btn">Book Appointment</a>
+                        </div>
+                    </div>
+                    <div class="treatment-card">
+                        <div class="treatment-image" id="treat-body"></div>
+                        <div class="treatment-info">
+                            <h3 class="treatment-name">Nourishing Body Ritual</h3>
+                            <p class="treatment-desc">Experience full-body radiance with this luxurious exfoliating and
+                                moisturizing treatment, featuring cold-pressed precious oils and wild-harvested
+                                botanicals.</p>
+                            <a href="contact.html" class="btn btn-secondary treatment-btn">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Rooted in nature.</h2>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h4 class="value-title">Wild Botanicals</h4>
+                        <p class="value-desc">Harvested at their peak for maximum efficacy.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Precious Oils</h4>
+                        <p class="value-desc">Cold-pressed to retain essential nutrients.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Earth-Conscious</h4>
+                        <p class="value-desc">Sustainable packaging and practices.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4 class="value-title">Responsibly Sourced</h4>
+                        <p class="value-desc">Ethical partnerships with global artisans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Voices from our community</h2>
+                </div>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-card">
+                        <p class="quote">"My skin has never felt more alive and balanced. The Hydra Cream is a daily
+                            necessity now."</p>
+                        <p class="author">— Sarah Jenkins</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Truly clean ingredients that you can feel working. I love the natural scent of
+                            the Night Cream."</p>
+                        <p class="author">— Emma L.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"The Gentle Cleanser leaves my face soft, not stripped. Finally, a skincare
+                            routine that feels like self-care."</p>
+                        <p class="author">— Lauren C.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Newsletter -->
+        <footer class="footer" id="support">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">TUA PELLE</h2>
+                    <p class="footer-tagline">Certified Organic &bull; 100% Vegan</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Join our radiance circle</h3>
+                    <p class="newsletter-desc">Sign up for exclusive offers, skincare tips, and new product launches.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Shop</h4>
+                        <a href="#shop">Best Sellers</a>
+                        <a href="#shop">Face Care</a>
+                        <a href="#shop">Body Care</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>About</h4>
+                        <a href="about.html">Our Story</a>
+                        <a href="about.html">Ingredients</a>
+                        <a href="about.html">Sustainability</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Support</h4>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">FAQ</a>
+                        <a href="contact.html">Returns</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tua Pelle Sacramento. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
