@@ -99,71 +99,87 @@
         <section class="shop-grid">
             <div class="container">
                 <div class="shop-filters">
-                    <button class="filter-btn active">All</button>
-                    <button class="filter-btn">Face Care</button>
-                    <button class="filter-btn">Body Care</button>
-                    <button class="filter-btn">Serums & Oils</button>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="face">Face Care</button>
+                    <button class="filter-btn" data-filter="body">Body Care</button>
+                    <button class="filter-btn" data-filter="serums">Serums & Oils</button>
                 </div>
 
                 <div class="product-grid">
                     <!-- Original Products -->
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="face" style="opacity: 1; transform: none;">
                         <div class="product-image" id="prod-hydra"></div>
                         <h3 class="product-name">Hydra Cream</h3>
                         <span class="product-price">$65.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_hydra"
+                            data-name="Hydra Cream" data-price="65.00" data-image="images/product1.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="face" style="opacity: 1; transform: none;">
                         <div class="product-image" id="prod-cleanser"></div>
                         <h3 class="product-name">Gentle Cleanser</h3>
                         <span class="product-price">$42.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_cleanser"
+                            data-name="Gentle Cleanser" data-price="42.00" data-image="images/product2.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="face" style="opacity: 1; transform: none;">
                         <div class="product-image" id="prod-night"></div>
                         <h3 class="product-name">Night Cream</h3>
                         <span class="product-price">$88.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_night"
+                            data-name="Night Cream" data-price="88.00" data-image="images/product3.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="face" style="opacity: 1; transform: none;">
                         <div class="product-image" id="prod-day"></div>
                         <h3 class="product-name">Day Cream SPF 30</h3>
                         <span class="product-price">$55.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_day"
+                            data-name="Day Cream SPF 30" data-price="55.00" data-image="images/product4.png">Add to
+                            Cart</button>
                     </div>
 
                     <!-- New Products (Reusing images since quota failed) -->
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="serums" style="opacity: 1; transform: none;">
                         <div class="product-image" style="background-image: url('images/product5.png')"></div>
                         <h3 class="product-name">Antioxidant Serum</h3>
                         <span class="product-price">$95.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_serum"
+                            data-name="Antioxidant Serum" data-price="95.00" data-image="images/product5.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="body" style="opacity: 1; transform: none;">
                         <div class="product-image" style="background-image: url('images/product3.png')"></div>
                         <h3 class="product-name">Botanical Body Oil</h3>
                         <span class="product-price">$72.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_bodyoil"
+                            data-name="Botanical Body Oil" data-price="72.00" data-image="images/product3.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="serums" style="opacity: 1; transform: none;">
                         <div class="product-image" style="background-image: url('images/product1.png')"></div>
                         <h3 class="product-name">Rosewater Mist</h3>
                         <span class="product-price">$38.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_mist"
+                            data-name="Rosewater Mist" data-price="38.00" data-image="images/product1.png">Add to
+                            Cart</button>
                     </div>
-                    <div class="product-card visible" style="opacity: 1; transform: none;">
+                    <div class="product-card visible" data-category="face" style="opacity: 1; transform: none;">
                         <div class="product-image" style="background-image: url('images/product2.png')"></div>
                         <h3 class="product-name">Purifying Clay Mask</h3>
                         <span class="product-price">$54.00</span>
-                        <a href="#" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.85rem;">Add to
-                            Cart</a>
+                        <button class="btn btn-primary add-to-cart-btn"
+                            style="padding: 0.8rem 1.5rem; font-size: 0.85rem;" data-id="prod_claymask"
+                            data-name="Purifying Clay Mask" data-price="54.00" data-image="images/product2.png">Add to
+                            Cart</button>
                     </div>
                 </div>
             </div>
